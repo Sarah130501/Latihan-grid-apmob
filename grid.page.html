@@ -1,0 +1,96 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-icon name="list"></ion-icon>
+        </ion-col>
+        <ion-col>Friendlist</ion-col>
+      </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <br/><ion-icon name="search"></ion-icon><br/>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Recomendations</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+          <ion-img src="assets/icon/male.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+            <br/>Ismail Husein<br/>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="addFriend()">Add Friend</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+            <ion-img src="assets/icon/female.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+          <br/>Riana Fitria Sari<br/>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="addFriend()">Add Friend</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Friend Requests</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+            <ion-img src="assets/icon/male2.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+          <br/>Satria Anwar<br/>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="accept()">Accept</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Your Friends</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+            <ion-img src="assets/icon/female2.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+          <br/>Nadia Rahmawati<br/>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="unfriend()">Unfriend</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+            <ion-img src="assets/icon/male3.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+          <br/>Irwan Firmansyah Akbar<br/>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="unfriend()">Unfriend</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
